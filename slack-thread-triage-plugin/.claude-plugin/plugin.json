@@ -1,0 +1,21 @@
+{
+  "name": "slack-thread-triage",
+  "version": "1.0.0",
+  "description": "Analyzes Slack/Teams conversation threads to detect consensus, unresolved questions, and next steps, then generates the minimum viable reply to move the thread forward.",
+  "author": {
+    "name": "Venkatesh Peri"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slack",
+    "teams",
+    "thread",
+    "triage",
+    "consensus",
+    "reply"
+  ],
+  "skills": ["./skills/slack-thread-triage"],
+  "components": {
+    "skills": ["skills/slack-thread-triage"]
+  }
+}
