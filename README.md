@@ -23,7 +23,7 @@ claude plugin marketplace add suryap25/Claude-Skillers
 claude plugin install slack-thread-triage@claude-skillers
 ```
 
-This repository is private. Claude Code uses your existing git credentials. GitHub `owner/repo` shorthand clones over SSH by default.
+This repository is public so Claude Code can clone it over HTTPS from the Add marketplace dialog.
 
 From a local clone of this repo:
 
