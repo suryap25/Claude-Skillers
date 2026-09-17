@@ -6,24 +6,41 @@ This plugin packages the `slack-thread-triage` skill. It **drafts** a reply. It 
 
 ## Install from this marketplace
 
-The marketplace catalog is `slack-thread-triage-plugin/.claude-plugin/marketplace.json`. From the Claude-Skillers repo root (or any clone that contains this folder):
+The catalog Claude Code loads from GitHub is the **repository-root** file `.claude-plugin/marketplace.json`. Plugin code lives in `slack-thread-triage-plugin/` (`source`: `./slack-thread-triage-plugin`).
 
-In Claude Code:
+In Claude Code Add marketplace, use:
 
 ```text
-/plugin marketplace add ./slack-thread-triage-plugin
+suryap25/Claude-Skillers
+```
+
+or
+
+```text
+https://github.com/suryap25/Claude-Skillers.git
+```
+
+Then:
+
+```text
 /plugin install slack-thread-triage@claude-skillers
 /reload-plugins
 ```
 
-From the CLI:
+CLI:
 
 ```bash
-claude plugin marketplace add ./slack-thread-triage-plugin
+claude plugin marketplace add suryap25/Claude-Skillers
 claude plugin install slack-thread-triage@claude-skillers
 ```
 
-If the repo is on GitHub, you can add the marketplace from the git remote instead of a local path (same `marketplace.json` inside this plugin folder). After install, confirm the skill with `/` or `/skills`. Plugin skills are namespaced:
+From a local clone of the repo root:
+
+```text
+/plugin marketplace add .
+```
+
+After install, confirm the skill with `/` or `/skills`. Plugin skills are namespaced:
 
 ```text
 /slack-thread-triage:slack-thread-triage
