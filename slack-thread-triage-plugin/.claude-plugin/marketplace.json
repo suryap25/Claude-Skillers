@@ -1,0 +1,17 @@
+{
+  "name": "claude-skillers",
+  "owner": {
+    "name": "Venkatesh Peri"
+  },
+  "metadata": {
+    "description": "Claude Code marketplace for Claude-Skillers plugins",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "slack-thread-triage",
+      "source": "./",
+      "description": "Analyzes Slack/Teams conversation threads to detect consensus, unresolved questions, and next steps, then generates the minimum viable reply to move the thread forward."
+    }
+  ]
+}
